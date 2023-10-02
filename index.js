@@ -15,6 +15,15 @@ const titleCased = () => {
   return tutorials.map((aSentence) => title(aSentence))
 }
 
+//The above can be abstracted even further
+//  
+// const titleCased = (anArray) => {
+//   return anArray.map((aSentence) => title(aSentence))
+// }
+// 
+// this will allow any elements within an array to be title cased. However, this fails the tests for this lab
+// 
+
 function title(aString) {
   const arr = aString.split(" ");
   const arr2 = [];
